@@ -14,7 +14,7 @@ function Home() {
             <span>capable humans</span>.
           </h1>
           <p className={styles.heroDescription}>
-            We believe kids don't need to wait until they're older to build, create, make. 
+            We believe kids don't need to wait until they're older to build, create, make.
             Our tools respect their intelligence and spark genuine capability.
           </p>
         </div>
@@ -29,25 +29,36 @@ function Home() {
         </div>
       </section>
 
-      {/* Philosophy Section */}
+      {/* What We Believe Section */}
       <section id="philosophy" className={styles.philosophy}>
         <div className={styles.philosophyGrid}>
           <div>
-            <p className={styles.sectionLabel}>Our Philosophy</p>
-            <h2>The sequence matters.</h2>
+            <p className={styles.sectionLabel}>What We Believe</p>
+            <h2>Kids are capable now.</h2>
           </div>
           <div className={styles.philosophyItems}>
             <div className={`${styles.philosophyItem} ${styles.design}`}>
-              <span className={styles.itemLabel}>Design</span>
-              <p>Envision who you want to become. Not someday — now. The identity comes first, then the structure that supports it.</p>
+              <p>Kids are capable now, not just preparing for later.</p>
             </div>
             <div className={`${styles.philosophyItem} ${styles.build}`}>
-              <span className={styles.itemLabel}>Build</span>
-              <p>Create the systems that make your vision inevitable. Tools aren't just useful — they're shields that protect your future self.</p>
+              <p>Real tools make real learners.</p>
             </div>
             <div className={`${styles.philosophyItem} ${styles.be}`}>
-              <span className={styles.itemLabel}>Be</span>
-              <p>Stop preparing. Start embodying. You don't need permission to become who you're designing yourself to be.</p>
+              <p>Play and mastery aren't opposites.</p>
+            </div>
+          </div>
+        </div>
+        <div className={styles.philosophyGrid}>
+          <div>
+            <p className={styles.sectionLabel}>How We Build</p>
+            <h2>We don't dumb things down.</h2>
+          </div>
+          <div className={styles.philosophyItems}>
+            <div className={`${styles.philosophyItem} ${styles.design}`}>
+              <p>We design tools that meet kids where they are and trust them to rise.</p>
+            </div>
+            <div className={`${styles.philosophyItem} ${styles.build}`}>
+              <p>Every app starts with a question: What would this look like if we assumed they could handle it?</p>
             </div>
           </div>
         </div>
