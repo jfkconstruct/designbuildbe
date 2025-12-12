@@ -1,0 +1,60 @@
+.notebuddy {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+}
+
+.container {
+  max-width: 700px;
+  text-align: center;
+}
+
+.label {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-terra);
+  margin-bottom: 1rem;
+}
+
+.notebuddy h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  color: var(--color-sage);
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.status {
+  margin-bottom: 2rem;
+}
+
+.status span {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  padding: 0.5rem 1rem;
+  background-color: rgba(44, 36, 22, 0.05);
+  border-radius: 2px;
+}
+
+.description {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--color-espresso-light);
+  margin-bottom: 2rem;
+}
+
+.cta {
+  font-size: 1rem;
+  color: var(--color-terra);
+}

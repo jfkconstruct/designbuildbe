@@ -1,0 +1,288 @@
+/* Hero Section */
+.hero {
+  min-height: 92vh;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  align-items: center;
+  padding: 0 4rem;
+  position: relative;
+  gap: 2rem;
+}
+
+.heroContent {
+  max-width: 520px;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s cubic-bezier(0.22, 1, 0.36, 1) 0.2s forwards;
+}
+
+.heroLabel {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-terra);
+  margin-bottom: 1.5rem;
+}
+
+.heroTitle {
+  font-size: clamp(2.5rem, 5vw, 3.8rem);
+  font-weight: 400;
+  line-height: 1.15;
+  margin-bottom: 2rem;
+}
+
+.heroTitle span {
+  color: var(--color-sage);
+  font-style: italic;
+}
+
+.heroDescription {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  color: var(--color-espresso-light);
+  max-width: 480px;
+}
+
+.heroVisual {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: -2rem;
+}
+
+.scrollIndicator {
+  position: absolute;
+  bottom: 3rem;
+  left: 4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  opacity: 0;
+  animation: fadeIn 1.5s ease 1s forwards;
+}
+
+.scrollLine {
+  width: 1px;
+  height: 40px;
+  background-color: var(--color-espresso);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.scrollText {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+/* Philosophy Section */
+.philosophy {
+  padding: 8rem 4rem;
+  background-color: var(--color-espresso);
+  color: var(--color-cream);
+}
+
+.philosophyGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 6rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sectionLabel {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-terra);
+  margin-bottom: 1.5rem;
+}
+
+.philosophy h2 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.philosophyItems {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.philosophyItem {
+  border-left: 2px solid;
+  padding-left: 1.5rem;
+}
+
+.philosophyItem.design { border-color: var(--color-terra); }
+.philosophyItem.build { border-color: var(--color-sage); }
+.philosophyItem.be { border-color: var(--color-cream); }
+
+.itemLabel {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.philosophyItem.design .itemLabel { color: var(--color-terra); }
+.philosophyItem.build .itemLabel { color: var(--color-sage); }
+.philosophyItem.be .itemLabel { color: var(--color-cream); }
+
+.philosophyItem p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  opacity: 0.85;
+}
+
+/* Products Section */
+.products {
+  padding: 8rem 4rem;
+  background-color: var(--color-cream);
+}
+
+.productsContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.productsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 4rem;
+}
+
+.products h2 {
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+
+.productsIntro {
+  max-width: 400px;
+  color: var(--color-espresso-light);
+  line-height: 1.7;
+  text-align: right;
+}
+
+.productsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+/* For Parents Section */
+.forParents {
+  padding: 6rem 4rem;
+  background-color: var(--color-cream-dark);
+}
+
+.forParentsContent {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.forParents h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 2rem;
+}
+
+.forParents p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--color-espresso-light);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 0.5;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% { 
+    opacity: 0.3; 
+    transform: scaleY(1); 
+  }
+  50% { 
+    opacity: 0.6; 
+    transform: scaleY(1.1); 
+  }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
+
+  .heroVisual {
+    margin-right: 0;
+    justify-content: center;
+  }
+
+  .heroVisual svg {
+    max-width: 500px;
+  }
+
+  .philosophyGrid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .productsHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .productsIntro {
+    text-align: left;
+  }
+
+  .productsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 2rem;
+    min-height: auto;
+  }
+
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .heroDescription {
+    font-size: 1.1rem;
+  }
+
+  .philosophy,
+  .products,
+  .forParents {
+    padding: 4rem 2rem;
+  }
+}

@@ -1,0 +1,52 @@
+.footer {
+  padding: 4rem;
+  background-color: var(--color-espresso);
+  color: var(--color-cream);
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.design { color: var(--color-terra); }
+.dot { opacity: 0.3; }
+.build { color: var(--color-sage); }
+.be { color: var(--color-cream); }
+
+.tagline {
+  font-size: 0.85rem;
+  opacity: 0.5;
+}
+
+.copyright {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  opacity: 0.4;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 2rem;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+}
